@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-container h1 {
+    margin: 0;
+}
+
+.title-container p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+.report-container {
+    margin: 0 auto;
+    width: 80%;
+}
+.section {
+    margin-bottom: 80px;
+}
+h3 {
+    font-size: 1.25em;
+    background-color: #cbcbcb;
+    padding: 10px;
+    border: 1px solid #b4b4b4;
+    margin: 0 0 10px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.section-title {
+    font-size: 1.125em;
+    background-color: #e2e2e2;
+    padding: 8px;
+    text-align: left;
+}
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+.details-container {
+    margin-top: 20px;
+}
+.details-table {
+    margin-bottom: 20px;
+}

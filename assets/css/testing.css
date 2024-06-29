@@ -1,0 +1,17 @@
+.menu {
+  border: 2px solid #372846;
+  margin: 2%;
+  text-align: center;
+  color : floralwhite;
+  background-color: rgb(86, 197, 101);
+}
+
+.row {
+border: 2px solid rgb(0, 0, 0);
+padding: 2% 0;
+margin: 2% ;
+align-content: center;
+text-align: center;
+font-weight: 500;
+}
+

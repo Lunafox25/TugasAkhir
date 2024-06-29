@@ -1,0 +1,428 @@
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.dashboard-container {
+  max-width: 1200px; /* Set a max width for the form */
+  margin: 0 auto; /* Center the form container */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 365px;
+  height: 150px; /* Adjusted height to accommodate the header and content */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(135, 138, 164, 0.2), 0 6px 20px 0 rgba(93, 98, 116, 0.19);
+  color: black;
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Ensure the header doesn't overflow */
+}
+
+.card-header {
+  border-radius: 5px 5px 0 0; /* Rounded corners for the top only */
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  box-sizing: border-box; /* Include padding in the element's total width */
+  background-image: linear-gradient(to right, var(--base-color), var(--pastel-color));
+}
+
+.pending { 
+  --base-color: #ffbd72; 
+  --pastel-color: rgb(255, 121, 63);
+}
+
+.dalamproses { 
+  --base-color: #67aeff; 
+  --pastel-color: rgb(86, 77, 218);
+}
+
+.packing { 
+  --base-color: #929ec4; 
+  --pastel-color: rgb(113, 110, 146);
+}
+
+.dikirim { 
+  --base-color: #d448ff; 
+  --pastel-color: rgb(130, 11, 130);
+}
+
+.selesai { 
+  --base-color: #29c57f; 
+  --pastel-color: rgb(11, 130, 100);
+}
+
+.dibatalkan { 
+  --base-color: #ff5151; 
+  --pastel-color: rgb(224, 0, 15);
+}
+
+.card-content {
+  padding-top: 20px; /* Adjust based on the height of the card-header */
+  font-size: 40px;
+  font-weight: 700;
+  height: 100%; /* Ensure the content takes the remaining height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.mytable {
+  margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0 0 10px #bcc2e1;
+    border-radius: 10px; /* Apply border-radius here */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.mytable th, td {
+  text-align: left;
+  padding: 8px 10px;
+}
+
+.mytable tr:nth-child(even) {
+  background-color: #eefbef;
+}
+.mytable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.mytable th {
+  background-color: #20AC6D;
+  color: white;
+}
+
+.mytable .opsi {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Khusus Form */
+.myForm {
+  max-width: 900px; /* Set a max width for the form */
+  margin: 0 auto; /* Center the form container */
+}
+
+.form-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Flexbox layout for form fields */
+.isi-form {
+  display: flex;
+  align-items: center;
+
+  justify-content: center; 
+  margin: 10px 0; /* Space between form rows */
+}
+
+/* Label styling */
+.isi-form label {
+  margin-right: 10px; /* Space between label and input */
+  width: 20%; /* Adjust width to align labels */
+  text-align: left; /* Align label text to the right */
+  font-weight: bold;
+  color: rgb(0, 105, 51);
+}
+
+/* Input and select styling */
+.isi-form input[type=text], 
+.isi-form input[type=date],
+.isi-form input[type=password], 
+.isi-form select {
+  flex: 1; /* Allow input to take up remaining space */
+  padding: 12px 20px; /* Padding inside input */
+  font-size: 14px;
+  margin: 8px 0; /* Margin between input elements */
+  display: inline-block; 
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Read-only input styling */
+.isi-form input[type=text]:read-only, 
+.isi-form input[type=date]:read-only {
+  background-color: #e1e1e1; /* Background color for read-only inputs */
+  border-color: #d2d2d2; /* Border color for read-only inputs */
+}
+
+/* Button styling */
+.hps_dbahan, .hps_dbarang {
+  background-color: #ff324a; /* Button background color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  border-radius: 6px; /* Rounded corners */
+  padding: 8px 15px; /* Padding inside button */
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; /* Font size */
+  margin: 2px; /* Space around buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover and active states */
+.hps_dbahan:hover, .hps_dbarang:hover {
+  background-color: #ff6868; 
+}
+
+.hps_dbahan:active, .hps_dbarang:active {
+  background-color: #c7152d; 
+  transform: translateY(2px); /* Move button down on click */
+}
+
+.detailbarang-item, .detailbahan-item {
+width: 100%;
+margin: 0 auto;
+}
+
+.detailbarang-item label, .detailbahan-item label {
+  font-size: 14px;
+  color: #07563d;
+  }
+
+.detailbarang-item input, .detailbahan-item input,
+.detailbarang-item select, .detailbahan-item select {
+  font-size: 14px;
+  width: 130px;
+  background-color: #f5ffe8;
+  padding: 4px;
+  border : 1px solid #c4dfc9;
+  border-radius: 4px;
+  }
+
+  .detailbarang-item input[type=number], .detailbahan-item input[type=number] {
+    width: 50px;
+  }
+/* END Khusus Form */
+
+/*Button Umum */
+.button {
+  background-color: #20AC6D;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+}
+
+.button:hover {
+  background-color: #47D279;
+}
+
+.button:active {
+  background-color: #ADEA71;
+  transform: translateY(2px);
+}
+
+.btn-hps {
+  background-color: #ff324a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+}
+
+.btn-hps:hover {
+  background-color: #ff6868;
+}
+
+.btn-hps:active {
+  background-color: #c7152d;
+  transform: translateY(2px);
+}
+/* END Button Umum */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.close-btn {
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px; /* Ensure spacing between buttons */
+}
+
+.close-btn:hover {
+  background-color: darkred;
+}
+
+h2 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: calc(100% - 22px); /* Adjusted to fit within padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.submit-btn {
+  background-color: #20AC6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #47D279;
+}
+/* Modal Styles END */
+
+
+/* Khusus Detail Pesanan */
+.content {
+  max-width: 1100px; /* Set a max width for the form */
+  margin: 0 auto; /* Center the form container */
+}
+
+.card-container2 {
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.card2 {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-header2 { /* Rounded corners for the top only */
+  padding: 20px 20px 5px 20px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  top: 0;
+  left: 0;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box; /* Include padding in the element's total width */
+  background-color: #b6ffa0;
+  
+}
+.card-content2 {
+  font-size: 20px;
+  padding: 5px 20px 20px 20px;
+  font-weight: 500;
+  height: 100%; /* Ensure the content takes the remaining height */
+  align-items: center;
+  justify-content: center;
+  background-color: #b6ffa0;
+}
+.mytable2 {
+  
+  border-collapse: collapse;
+  width: 600px;
+}
+
+.mytable2 th, .mytable2 td {
+  text-align: left;
+  padding: 8px;
+  width: 60%;
+}
+
+.mytable2 tr:nth-child(odd) {
+  background-color: #e6ffe0;
+}
+.mytable2 tr:nth-child(even) {
+  background-color: #f8ffde;
+}
+
+.mytable2 th {
+  color: rgb(0, 105, 51);
+  width: 40%;
+}
+
+.flex-detail {
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #bcc2e1;
+  background-color: white;
+}
+
+.flex-detail .file-progress {
+  flex-grow: 5;
+  
+}
+
+.tombol-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+/* End Khusus Detail Pesanan */
